@@ -9,6 +9,14 @@ This app uses following libraries, and is Client Side SPA practicing Composable 
 * CSS
 * React testing library
 
+## Performance Metrics Score from ChromeLightHouse
+
+| Metric      | Mobile      | Desktop     |
+| ----------- | ----------- | ----------- |
+| Performance      | 96     | 99 |
+| Accessibility   | 94      | 94 |
+| Best Practices   | 100    | 100 |
+
 ## How to run locally
 
 * Clone the repository
