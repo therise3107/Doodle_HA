@@ -25,3 +25,14 @@ export const mapToMessage = (response: IMessageResponse): IMessageType => {
 
   return message
 }
+
+export const buildMessage = (message: string, author: string) => {
+  const timestamp = String(Date.now())
+
+  return {
+    id: timestamp,
+    author,
+    message,
+    timestamp
+  } satisfies IMessageType
+}

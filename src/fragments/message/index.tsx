@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Card, Heading } from '../../components'
 
 import { type IMessageType } from '../../models/message'
+import { useLocalStorage } from '../../hooks'
 
 import './message.css'
 
@@ -10,9 +11,11 @@ export interface IMessageSection {
 }
 
 export const MessageSection = (props: IMessageSection) => {
+  const [currentAuthor] = useLocalStorage<string>({
+    key: 'author'
+  })
   const emptyChatSection = useRef<HTMLDivElement>(null)
-  const { messages} = props
-
+  const { messages } = props
   // Scroll to the latest message
   useEffect(() => {
     if (emptyChatSection.current !== null) {
@@ -24,7 +27,7 @@ export const MessageSection = (props: IMessageSection) => {
     {
       messages.map(data => {
         const { id, message, author, timestamp } = data
-        const userIsAuthor = author === 'Bryan'
+        const userIsAuthor = author === currentAuthor
         const className = `messageSection ${userIsAuthor ? 'highlightedMessage' : ''}`
 
         return (

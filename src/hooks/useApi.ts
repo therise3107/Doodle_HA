@@ -53,6 +53,7 @@ export const useApi = <T, K>(props: IApi<T, K>) => {
   return {
     data: response,
     loading: isLoading,
+    setData: setResponse,
     error
   }
 }

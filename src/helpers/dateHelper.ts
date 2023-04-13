@@ -24,3 +24,9 @@ export const formatDateToHumanReadableFormat = (timestamp?: number | string, for
 
   return `${day} ${month} ${year} ${hour}:${mins}`
 }
+
+const WEEK_IN_MINS = 60 * 24 * 7
+
+export const getNMinsBeforeDate = (mins: number = WEEK_IN_MINS) => {
+  return String(new Date().getTime() - mins * 60000)
+}

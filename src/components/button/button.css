@@ -19,3 +19,8 @@
   color: var(--primary-orange1);
   background-color: var(--white);
 }
+
+button:disabled,
+button[disabled] {
+  pointer-events: none;
+}
