@@ -1,32 +1,54 @@
-import { Heading } from '../../components'
-import { formatDateToHumanReadableFormat } from '../../helpers/dateHelper'
+import { useEffect, useRef } from 'react'
+import { Card, Heading } from '../../components'
+
+import { type IMessageType } from '../../models/message'
 
 import './message.css'
 
 export interface IMessageSection {
-  children: React.ReactNode
-  justify?: 'start' | 'end'
+  messages: IMessageType[]
 }
 
 export const MessageSection = (props: IMessageSection) => {
-  const { children, justify = 'start' } = props
-  const className = `messageSection justify-${justify}`
+  const emptyChatSection = useRef<HTMLDivElement>(null)
+  const { messages} = props
 
-  return (
-    <div className={className}>
-      {children}
-    </div>
-  )
+  // Scroll to the latest message
+  useEffect(() => {
+    if (emptyChatSection.current !== null) {
+      emptyChatSection.current.scrollIntoView()
+    }
+  }, [messages])
+
+  return (<>
+    {
+      messages.map(data => {
+        const { id, message, author, timestamp } = data
+        const userIsAuthor = author === 'Bryan'
+        const className = `messageSection ${userIsAuthor ? 'highlightedMessage' : ''}`
+
+        return (
+          <div className={className} key={id}>
+            <Card>
+              <Message userIsAuthor={userIsAuthor} author={userIsAuthor ? undefined : author} message={message} timestamp={timestamp} />
+            </Card>
+          </div>
+        )
+      })
+    }
+    <div className='emptyScrollToEnd' ref={emptyChatSection} />
+  </>)
 }
 
 export interface IMessage {
+  userIsAuthor: boolean
   author?: string
   message: string
   timestamp?: string
 }
 
 export const Message = (props: IMessage) => {
-  const { author, message, timestamp } = props
+  const { author, message, timestamp, userIsAuthor } = props
 
   return (
     <div className="messageWrapper">
@@ -36,7 +58,7 @@ export const Message = (props: IMessage) => {
         }
       </div>
       <div className="messageContent"><p>{message}</p></div>
-      <div className="messageTimestamp"><span>{formatDateToHumanReadableFormat(timestamp)}</span></div>
+      <div className={`messageTimestamp ${userIsAuthor ? 'text-end' : ''}`}><span>{timestamp}</span></div>
     </div>
   )
 }
