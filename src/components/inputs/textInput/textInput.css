@@ -1,13 +1,14 @@
 .textInput {
-  padding: var(--gutter) calc(var(--gutter)/2);
-  font-size: var(--font-heading6);
-  font-weight: 400;
+  padding: var(--gutter) calc(var(--gutter) / 2);
+  font-size: var(--content);
+  font-weight: normal;
   line-height: 1.5;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid transparent;
   appearance: none;
   border-radius: 4px;
+  color: var(--primary-grey2);
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 

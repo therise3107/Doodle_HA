@@ -1,8 +1,10 @@
 @import "./variables.css";
 @import "./typography.css";
+@import "./helper.css";
 
 html {
-  font-size: clamp(1rem, 0.75rem + 1vw, 2rem);
+  font-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -11,4 +13,5 @@ body {
 
 #root {
   height: 100vh;
+  overflow: hidden;
 }

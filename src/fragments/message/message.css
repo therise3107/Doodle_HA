@@ -1,0 +1,39 @@
+.messageSection {
+  padding: calc(var(--gutter)/ 2) var(--gutter);
+  color: var(--primary-grey2);
+}
+
+.messageSection .card {
+  min-width: 240px;
+  width: fit-content;
+  max-width: 420px;
+}
+
+.messageHeader h5 {
+  color: var(--primary-grey1);
+  font-size: var(--content);
+  font-weight: normal;
+  margin-bottom: calc(var(--gutter) / 2);
+  line-height: 1.2
+}
+
+.messageContent p {
+  color: var(--primary-grey2);
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.2
+}
+
+.messageTimestamp {
+  color: var(--primary-grey1);
+  margin-top: calc(var(--gutter) / 2);
+  font-size: var(--content);
+  font-weight: normal;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 768px) {
+  .messageSection {
+    padding: calc(var(--gutter)/ 2) 0;
+  }
+}

@@ -3,6 +3,9 @@
   --primary-orange1: #FB7E67;
   --white: #fff;
   --primary-blue1: #358DCA;
+  --primary-grey1: #D4D4DE;
+  --primary-grey2: #444B51;
+  --primary-yellow1: #FAFAD4;
   /* Fonts */
   --font-heading1: 3.052rem;
   --font-heading2: 2.441rem;
@@ -10,6 +13,7 @@
   --font-heading4: 1.563rem;
   --font-heading5: 1.25rem;
   --font-heading6: 0.8rem;
+  --content: 1rem;
   /* gutter and padding */
-  --gutter: 0.8rem;
+  --gutter: 16px;
 }

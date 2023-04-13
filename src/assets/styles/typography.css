@@ -1,5 +1,4 @@
-/* Here we define our typography styles for our CSS, for tag specific styles
-  for class specific styles we define them in their respective component level styles
+/* Here we define our typography styles for our CSS
 */
 
 h1 {
@@ -24,4 +23,8 @@ h5 {
 
 h6 {
   font-size: var(--font-heading6);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }

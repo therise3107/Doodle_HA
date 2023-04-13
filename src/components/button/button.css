@@ -7,8 +7,8 @@
   text-align: center;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: var(--gutter);
-  font-size: var(--font-heading6);
+  padding: var(--gutter) calc(var(--gutter) * 2);
+  font-size: var(--content);
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   color: var(--white);

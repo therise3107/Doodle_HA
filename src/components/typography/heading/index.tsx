@@ -6,7 +6,7 @@ export interface IHeading {
   className?: string
 }
 
-export const Heading = (props: IHeading): React.ReactNode => {
+export const Heading = (props: IHeading) => {
   const { children, className = 'heading', type } = props
   const Component = type ?? 'h1'
 

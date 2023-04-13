@@ -9,6 +9,7 @@
   display: flex;
   background: var(--white);
   justify-content: center;
+  overflow-y: auto;
 }
 
 .chatFooter {
@@ -17,6 +18,10 @@
   width: 100%;
   background: var(--primary-blue1);
   justify-content: center;
+}
+
+.emptyScrollToEnd {
+  padding-top: 1px;
 }
 
 @media screen and (min-width: 768px) {

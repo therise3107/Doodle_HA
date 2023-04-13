@@ -1,4 +1,5 @@
 export * from './button'
+export * from './card'
 export * from './container'
 export * from './inputs/textInput'
 export * from './typography/heading'
