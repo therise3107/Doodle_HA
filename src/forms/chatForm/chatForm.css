@@ -1,0 +1,11 @@
+.chatForm {
+  display: flex;
+}
+
+.chatForm input {
+  flex-grow: 1;
+}
+
+.chatForm button {
+  margin-left: calc(var(--gutter)/2);
+}

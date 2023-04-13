@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 640px;
+  padding: calc(var(--gutter)/2);
+}
+
+@media screen and (max-width: 481px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,9 +1,7 @@
-import './App.css'
+import { Chat } from './fragments/chat'
 
-const App = (): JSX.Element => (
-  <div>
-    <h1>Hello</h1>
-  </div>
+const App = () => (
+  <Chat />
 )
 
 export default App

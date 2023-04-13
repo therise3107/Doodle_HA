@@ -1,0 +1,14 @@
+@import "./variables.css";
+@import "./typography.css";
+
+html {
+  font-size: clamp(1rem, 0.75rem + 1vw, 2rem);
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}

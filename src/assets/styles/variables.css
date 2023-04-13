@@ -1,0 +1,15 @@
+:root {
+  /* Colors */
+  --primary-orange1: #FB7E67;
+  --white: #fff;
+  --primary-blue1: #358DCA;
+  /* Fonts */
+  --font-heading1: 3.052rem;
+  --font-heading2: 2.441rem;
+  --font-heading3: 1.953rem;
+  --font-heading4: 1.563rem;
+  --font-heading5: 1.25rem;
+  --font-heading6: 0.8rem;
+  /* gutter and padding */
+  --gutter: 0.8rem;
+}

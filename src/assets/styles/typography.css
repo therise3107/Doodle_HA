@@ -1,0 +1,27 @@
+/* Here we define our typography styles for our CSS, for tag specific styles
+  for class specific styles we define them in their respective component level styles
+*/
+
+h1 {
+  font-size: var(--font-heading1);
+}
+
+h2 {
+  font-size: var(--font-heading2);
+}
+
+h3 {
+  font-size: var(--font-heading3);
+}
+
+h4 {
+  font-size: var(--font-heading4);
+}
+
+h5 {
+  font-size: var(--font-heading5);
+}
+
+h6 {
+  font-size: var(--font-heading6);
+}

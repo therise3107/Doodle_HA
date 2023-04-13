@@ -1,0 +1,26 @@
+.chatParentWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContent {
+  flex-grow: 1;
+  display: flex;
+  background: var(--white);
+  justify-content: center;
+}
+
+.chatFooter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: var(--primary-blue1);
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .chatContent {
+    background: url("https://raw.githubusercontent.com/DoodleScheduling/hiring-challenges/master/frontend-engineer/assets/Body%20BG.png");
+  }
+}
