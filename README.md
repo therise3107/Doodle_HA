@@ -23,6 +23,7 @@ This app uses following libraries, and is Client Side SPA practicing Composable 
 * `npm install`
 * `npm run build`
 * `npm run preview`
+* Go to [`http://127.0.0.1:4173/`](http://127.0.0.1:4173/)
 
 ## How to run in development mode
 
